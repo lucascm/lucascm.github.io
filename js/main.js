@@ -105,8 +105,8 @@ class Index {
         cardTitle.textContent = title;
         cardBody.textContent = desc;
         cardLang.textContent = tags;
-        linkToGit.textContent = links[0];
-        linkToHome.textContent = links[1];
+        linkToGit.href = links[0];
+        linkToHome.href = links[1];
         
         return div;
         

@@ -1,5 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 62,5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+header.header-page {
+    /* border: 1px solid; */
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    position: relative;
+    padding-left: 1rem;
+}
+
+header.header-page img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 100px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+section#repositories {
+    display: flex;
+    flex-wrap: wrap;
+    /*border: 1px solid green;*/
+    justify-content: space-around;
+    padding: 0.3em;
+}
+
+section#repositories > div {
+    width: 15rem;
+    height: 15rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    box-shadow: 0px 1px 4px 0px #b5b1c0;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+p.links {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 0.1rem;
+}
+
+p.links > a {
+    color: gray;
+}
+
+p.description {
+    flex-grow: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+div#socialButtons .linkedin {
+    color: #0a66c2;
+}
+
+div#socialButtons .github {
+    color: black;
+}
+
+div#socialButtons {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div#socialButtons a {
+    padding: 1rem;
+    font-size: 3rem;
 }
