@@ -7,8 +7,9 @@
 }
 
 html {
-    font-size: 62,5%;
+    font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header.header-page {
@@ -17,6 +18,20 @@ header.header-page {
     padding-bottom: 3rem;
     position: relative;
     padding-left: 1rem;
+    background: url(/images/fundo-min.png), linear-gradient(186deg, rgb(9 14 14 / 90%) 0%, rgb(0 0 0) 98%, rgb(11 34 56) 100%);
+    background-size: cover;
+    background-blend-mode: soft-light;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #e2e9b9;
+    font-size: 2.3rem;
+}
+
+header.header-page h1 {
+    margin-bottom: 1rem;
 }
 
 header.header-page img {
@@ -26,6 +41,16 @@ header.header-page img {
     height: 100px;
     transform: translateY(-50%);
     border-radius: 50%;
+}
+
+header.header-page a.link-next {
+    position: absolute;
+    bottom: 0.1rem;
+    font-size: 3.3rem;
+}
+
+main {
+    font-size: 1.3rem;    
 }
 
 section#repositories {
